@@ -1,0 +1,28 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+*{
+  font-family: Arial, sans-serif !important;
+  box-sizing: border-box;
+}
+.bg{
+  background: linear-gradient(oklch(20.992% 0.03416 263.451 / 0.681),oklch(20.992% 0.03416 263.451 / 0.672)),url("./assets/Gemini_Generated_Image_sj6wg1sj6wg1sj6w.png");
+  background-position: center;
+}
+
+.wait {
+  animation-name: wait;
+  animation-iteration-count: infinite;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+}
+
+@keyframes wait {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
