@@ -58,7 +58,7 @@ export function Lists() {
         </h1>
         <hr className="w-75 m-auto my-3" />
         <div
-          className="d-flex flex-wrap gap-3 p-4 overflow-auto rounded-3 "
+          className="d-flex align-items-center justify-content-center flex-wrap gap-3 p-4 overflow-auto rounded-3 "
           style={{ width: "fit-contnet", background: "#cdd4fd" }}
         >
           {Lists.map((e) => {

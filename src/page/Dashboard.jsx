@@ -36,24 +36,24 @@ const SideBar = (name, img) => {
       style={{ cursor: "pointer" }}
     >
       <img src={img} alt={name} />
-      <p className="m-0 text-light mx-1">{name}</p>
+      <p className="m-0 text-light mx-1 d-none d-md-block d-lg-block">{name}</p>
     </NavLink>
   );
-};
+}
     
     return(
        <div className="d-flex flex-nowrap" >
         <div style={{height:"100vh" ,background:"#1F2A44" ,width:"20vw"}}
          className="d-flex flex-column justify-content-start align-items-start p-3" >
          <div className=" p-1 my-4">
-             <span className="text-light fw-bolder fs-4 border-start border-5 border-primary p-2" style={{background:"#0d6dfd45"}}>TaskDashboard</span>
+             <span className="text-light fw-bolder fs-4 border-start border-5 border-primary p-2 d-none d-lg-block" style={{background:"#0d6dfd45"}}>TaskDashboard</span>
          </div>
             {SideBar("home",home)}
             {SideBar("lists",list)}
             {SideBar("tasks",task)}
             {SideBar("profile",profile)}
            
-            <button onClick={()=>Logout()} className="btn btn-danger position-absolute bottom-0 fw-bolder mx-3 my-3">Log out</button>
+            <button onClick={()=>Logout()} className="btn btn-danger position-absolute bottom-0 fw-bolder">Log out</button>
         </div>
         <main>
             <Outlet  />
